@@ -79,5 +79,9 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
     "vite": "^5.4.19"
-  }
+  },
+  "description": "**URL**: https://lovable.dev/projects/93d46c31-1e9e-44a0-96df-70847c613dcb",
+  "main": "eslint.config.js",
+  "author": "",
+  "license": "ISC"
 }

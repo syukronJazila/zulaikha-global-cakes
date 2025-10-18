@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, MessageCircle, Facebook, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/zulaikha.png';
+
 
 const Footer = () => {
   const productCategories = [
@@ -20,19 +22,24 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Column */}
           <div>
-            <div className="h-12 w-40 bg-primary rounded-lg flex items-center justify-center font-bold text-gray-900 mb-4">
-              Zulaikha
+            <div className="h-30 w-48 mb-4 flex items-center justify-center overflow-hidden">
+              <img
+                src={logo}
+                alt="Logo Zulaikha"
+                className="h-full w-auto object-cover object-center px-2 rounded-3xl"
+              />
             </div>
+
             <p className="text-gray-400 text-sm mb-4">
               Cita Rasa Tradisional Medan Yang Mendunia Sejak 1995
             </p>
             <div className="flex space-x-3">
               <a
-                href="https://facebook.com"
+                href="https://web.facebook.com/p/ZulaikhaBikaAmbon-100044731158232/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center transition-colors"
@@ -41,7 +48,7 @@ const Footer = () => {
                 <Facebook size={18} />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/zulaikhabikaambonn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center transition-colors"
@@ -92,12 +99,12 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start text-gray-400 text-sm">
                 <MapPin size={16} className="mr-2 mt-1 flex-shrink-0" />
-                <span>Jl. Gatot Subroto No. 123, Medan Petisah, Medan</span>
+                <span>Jl. Mojopahit No.70 A-C, Petisah Tengah, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20112</span>
               </li>
               <li className="flex items-center text-gray-400 text-sm">
                 <Phone size={16} className="mr-2 flex-shrink-0" />
-                <a href="tel:061-4567890" className="hover:text-primary transition-colors">
-                  061-4567890
+                <a href="https://wa.me/6287747571102?text=Halo,%20saya%20tertarik%20dengan%20produk%20Bolu%20Bika%20Ambon%20Zulaikha" className="hover:text-primary transition-colors">
+                  +62 877-4757-1102
                 </a>
               </li>
               <li className="flex items-center text-gray-400 text-sm">
@@ -113,7 +120,7 @@ const Footer = () => {
                   className="bg-secondary hover:bg-secondary/90 text-white mt-2"
                 >
                   <a
-                    href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20produk%20Bolu%20Bika%20Ambon%20Zulaikha"
+                    href="https://wa.me/6287747571102?text=Halo,%20saya%20tertarik%20dengan%20produk%20Bolu%20Bika%20Ambon%20Zulaikha"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -127,7 +134,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
           <p>&copy; 2025 Bolu Bika Ambon Zulaikha. Hak Cipta Dilindungi.</p>
           <p className="mt-2">Dibuat dengan ❤️ di Medan</p>
         </div>

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/zulaikha.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,7 +14,6 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -35,16 +35,20 @@ const Navbar = () => {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled || !isHomePage
-            ? 'bg-background shadow-md'
-            : 'bg-transparent'
+            ? 'bg-[#ffef03] shadow-md'
+            : 'bg-[#ffef03]'
         }`}
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <div className="h-12 w-40 bg-primary rounded-lg flex items-center justify-center font-bold text-foreground">
-                Zulaikha
+              <div className="h-14 w-48 flex items-center justify-center overflow-hidden">
+                <img
+                  src={logo}
+                  alt="Logo Zulaikha"
+                  className="h-full w-auto object-contain object-center px-2"
+                />
               </div>
             </Link>
 
@@ -55,8 +59,10 @@ const Navbar = () => {
                   key={link.to}
                   to={link.to}
                   className={({ isActive }) =>
-                    `text-sm font-medium transition-colors hover:text-primary ${
-                      isActive ? 'text-primary' : 'text-foreground'
+                    `text-sm font-medium transition-colors ${
+                      isActive
+                        ? 'text-[#333333] underline underline-offset-4'
+                        : 'text-[#333333] hover:text-[#03a557]'
                     }`
                   }
                 >
@@ -67,7 +73,10 @@ const Navbar = () => {
 
             {/* CTA Button */}
             <div className="hidden md:block">
-              <Button asChild className="bg-primary hover:bg-primary/90 text-foreground font-semibold">
+              <Button
+                asChild
+                className="bg-[#03a557] hover:bg-[#028c47] text-white font-semibold"
+              >
                 <Link to="/contact">Hubungi Kami</Link>
               </Button>
             </div>
@@ -75,10 +84,10 @@ const Navbar = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg hover:bg-accent transition-colors"
+              className="md:hidden p-2 rounded-lg hover:bg-white/20 transition-colors"
               aria-label="Toggle menu"
             >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMobileMenuOpen ? <X size={24} color="#03a557" /> : <Menu size={24} color="#03a557" />}
             </button>
           </div>
         </div>
@@ -97,7 +106,7 @@ const Navbar = () => {
           onClick={() => setIsMobileMenuOpen(false)}
         />
         <div
-          className={`absolute top-0 right-0 bottom-0 w-64 bg-background shadow-xl transition-transform duration-300 ${
+          className={`absolute top-0 right-0 bottom-0 w-64 bg-[#ffef03] shadow-xl transition-transform duration-300 ${
             isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
@@ -107,8 +116,8 @@ const Navbar = () => {
                 key={link.to}
                 to={link.to}
                 className={({ isActive }) =>
-                  `py-3 text-base font-medium border-b border-border transition-colors ${
-                    isActive ? 'text-primary' : 'text-foreground hover:text-primary'
+                  `py-3 text-base font-medium border-b border-white/30 transition-colors ${
+                    isActive ? 'text-[#333333] underline underline-offset-4' : 'text-[#333333] hover:text-[#03a557]'
                   }`
                 }
               >
@@ -116,7 +125,10 @@ const Navbar = () => {
               </NavLink>
             ))}
             <div className="mt-6">
-              <Button asChild className="w-full bg-primary hover:bg-primary/90 text-foreground font-semibold">
+              <Button
+                asChild
+                className="w-full bg-[#03a557] hover:bg-[#028c47] text-white font-semibold"
+              >
                 <Link to="/contact">Hubungi Kami</Link>
               </Button>
             </div>

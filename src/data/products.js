@@ -228,7 +228,7 @@ export const allProducts = [
     name: "Nastar Premium",
     category: "Cookies",
     categoryId: "cookies",
-    image: "https://images.unsplash.com/photo-1608198399988-841b5a7e3d6d?w=600&h=600&fit=crop",
+    image: "https://pagaralampos.bacakoran.co/upload/32649d866007e6463f03b1a32e601a33.jpg?w=600&h=600&fit=crop",
     shortDesc: "Nastar dengan isian selai nanas asli dan butter berkualitas tinggi",
     isBestSeller: true,
     detailInfo: {

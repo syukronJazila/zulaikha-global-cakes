@@ -1,4 +1,7 @@
 import { Calendar, Store, Globe, Package, Award, ShieldCheck } from 'lucide-react';
+import toko1 from '@/assets/toko.png';
+import toko2 from '@/assets/toko2.jpg';
+
 
 const About = () => {
   const stats = [
@@ -53,7 +56,7 @@ const About = () => {
             <div className="order-1 md:order-2">
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&h=400&fit=crop"
+                  src={toko1}
                   alt="Bolu Bika Ambon Zulaikha Store"
                   className="w-full h-auto"
                 />
@@ -65,7 +68,7 @@ const About = () => {
             <div>
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?w=600&h=400&fit=crop"
+                  src={toko2}
                   alt="Production Process"
                   className="w-full h-auto"
                 />

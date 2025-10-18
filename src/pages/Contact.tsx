@@ -168,9 +168,9 @@ const Contact = () => {
                     Kantor Pusat
                   </h3>
                   <p className="text-sm text-muted-foreground ml-7">
-                    Jl. Gatot Subroto No. 123<br />
-                    Medan Petisah, Medan<br />
-                    Sumatera Utara 20111<br />
+                    Jl. Mojopahit No.70 A-C<br />
+                    Petisah Tengah, Kec. Medan Petisah<br />
+                    Kota Medan, Sumatera Utara 20112<br />
                     Indonesia
                   </p>
                 </div>
@@ -179,11 +179,11 @@ const Contact = () => {
                   <h3 className="font-semibold mb-3">Kontak</h3>
                   <div className="space-y-3">
                     <a
-                      href="tel:061-4567890"
+                      href="https://wa.me/6287747571102?text=Halo,%20saya%20tertarik%20dengan%20produk%20Bolu%20Bika%20Ambon%20Zulaikha"
                       className="flex items-center text-sm hover:text-primary transition-colors"
                     >
                       <Phone size={18} className="mr-3 text-muted-foreground" />
-                      061-4567890
+                      +62 877-4757-1102
                     </a>
                     <a
                       href="mailto:info@zulaikhabikaambon.com"
@@ -197,7 +197,7 @@ const Contact = () => {
                       className="w-full bg-secondary hover:bg-secondary/90 text-white mt-2"
                     >
                       <a
-                        href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20produk%20Zulaikha"
+                        href="https://wa.me/6287747571102?text=Halo,%20saya%20ingin%20bertanya%20tentang%20produk%20Zulaikha"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -223,7 +223,7 @@ const Contact = () => {
                   <h3 className="font-semibold mb-3">Media Sosial</h3>
                   <div className="flex space-x-3 ml-7">
                     <a
-                      href="https://instagram.com"
+                      href="https://www.instagram.com/zulaikhabikaambonn/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
@@ -232,7 +232,7 @@ const Contact = () => {
                       <Instagram size={20} />
                     </a>
                     <a
-                      href="https://facebook.com"
+                      href="https://web.facebook.com/p/ZulaikhaBikaAmbon-100044731158232/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"

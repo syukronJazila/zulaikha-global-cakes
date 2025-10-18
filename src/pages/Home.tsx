@@ -8,6 +8,7 @@ import TestimonialCard from '@/components/TestimonialCard';
 import { allProducts } from '@/data/products';
 import { promos } from '@/data/promos';
 import { testimonials } from '@/data/testimonials';
+import mainImg from '@/assets/mainimg.jpg';
 
 const Home = () => {
   const [featuredProducts, setFeaturedProducts] = useState<typeof allProducts>([]);
@@ -62,7 +63,7 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                Bolu Bika Ambon dari Medan - Sejak 1995
+                Pusat Oleh - Oleh Sumut & Jajanan
               </h1>
               <p className="text-xl text-muted-foreground">
                 Kelezatan Tradisional Yang Telah Mendunia
@@ -102,7 +103,7 @@ const Home = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=500&fit=crop"
+                  src={mainImg}
                   alt="Bolu Bika Ambon Zulaikha"
                   className="w-full h-auto"
                 />
